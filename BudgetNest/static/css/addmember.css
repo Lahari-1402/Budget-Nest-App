@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    background-image: linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("../images/img_1.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Form Card */
+.form-container{
+    width: 360px;
+
+    padding: 45px 35px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.25),
+        inset 0 0 1px rgba(255,255,255,0.4);
+
+    transition: 0.4s ease;
+}
+
+/* Hover Effect */
+.form-container:hover{
+    transform: translateY(-5px);
+    box-shadow:
+        0 12px 40px rgba(0,0,0,0.35),
+        inset 0 0 1px rgba(255,255,255,0.5);
+}
+
+/* Input Fields */
+.form-container input{
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.85);
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+}
+
+.form-container input:focus{
+    background: white;
+    box-shadow: 0 0 10px rgba(78,84,200,0.4);
+}
+
+/* Button */
+.form-container button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.form-container button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(78,84,200,0.4);
+}
+
+/* Heading */
+.form-container h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Labels */
+.form-container label{
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}

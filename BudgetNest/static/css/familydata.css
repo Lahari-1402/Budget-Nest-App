@@ -1,0 +1,101 @@
+body{
+    background-color: #f4f7fc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.table{
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Table Header */
+.table thead{
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+}
+
+.table th{
+    padding: 18px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+/* Table Body */
+.table td{
+    padding: 16px;
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Hover Effect */
+.table tbody tr{
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover{
+    background-color: #f1f3ff;
+    transform: scale(1.01);
+}
+
+/* Alternate Row Color */
+.table tbody tr:nth-child(even){
+    background-color: #fafafa;
+}
+
+/* Update Button */
+.table a{
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: white;
+}
+
+/* Update Button Style */
+.table a[href*="update"]{
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.table a[href*="update"]:hover{
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Delete Button Style */
+.table a[href*="delete"]{
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.table a[href*="delete"]:hover{
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+
+    .table{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .table th,
+    .table td{
+        padding: 10px;
+    }
+
+    .table a{
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

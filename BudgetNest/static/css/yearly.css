@@ -1,0 +1,266 @@
+/* Page Background */
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f8f9ff
+        );
+
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container{
+    width: 92%;
+
+    max-width: 1150px;
+
+    margin: 50px auto;
+
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,0.08);
+
+    animation: fadeIn 0.7s ease;
+}
+
+/* Top Part */
+.toppart{
+    overflow: hidden;
+}
+
+/* Filter Form */
+.form-inline{
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin-bottom: 35px;
+}
+
+/* Label */
+.form-inline label{
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+/* Select Dropdown */
+.custom-select{
+    min-width: 200px;
+
+    height: 50px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dcdcdc;
+
+    border-radius: 14px;
+
+    background: #f8f9fc;
+
+    font-size: 15px;
+
+    color: #333;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+/* Focus */
+.custom-select:focus{
+    border-color: #667eea;
+
+    background: white;
+
+    box-shadow:
+        0 0 12px rgba(102,126,234,0.25);
+}
+
+/* Filter Button */
+.btn-primary{
+    height: 50px;
+
+    padding: 0 28px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Button Hover */
+.btn-primary:hover{
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(102,126,234,0.35);
+}
+
+/* Table Section */
+.bottomtab{
+    overflow-x: auto;
+}
+
+/* Table */
+.table{
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Table Header */
+.table thead{
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+    color: white;
+}
+
+/* Header Cells */
+.table th{
+    padding: 18px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+/* Table Data */
+.table td{
+    padding: 16px;
+
+    text-align: center;
+
+    font-size: 15px;
+
+    color: #444;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Alternate Rows */
+.table tbody tr:nth-child(even){
+    background: #fafbff;
+}
+
+/* Hover Effect */
+.table tbody tr{
+    transition: 0.3s ease;
+}
+
+.table tbody tr:hover{
+    background: #eef2ff;
+
+    transform: scale(1.003);
+}
+
+/* No Records */
+h3{
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 22px;
+
+    font-weight: 500;
+}
+
+/* Fade Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px){
+
+    .container{
+        width: 95%;
+
+        padding: 20px;
+    }
+
+    .form-inline{
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .custom-select,
+    .btn-primary{
+        width: 100%;
+    }
+
+    .table th,
+    .table td{
+        padding: 12px;
+
+        font-size: 13px;
+    }
+}
